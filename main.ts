@@ -205,8 +205,111 @@ radio.onReceivedNumber(function (receivedNumber) {
             `)
         music.playMelody("A G F A E A F C ", 120)
     }
+    if (receivedNumber == 7) {
+        basic.showString("Show")
+        Rover.setALLRGB(Rover.colors(RoverColors.Red))
+        basic.showLeds(`
+            # . . . #
+            . . . . .
+            . . # . .
+            . . . . .
+            # . . . #
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.Orange))
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . # . .
+            . # . # .
+            . . . . .
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.Yellow))
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.Green))
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.Blue))
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.Indigo))
+        basic.showLeds(`
+            . . . . .
+            . # # # .
+            . # # # .
+            . # # # .
+            . . . . .
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.Violet))
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.Purple))
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.White))
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.Black))
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        Rover.setALLRGB(Rover.colors(RoverColors.White))
+    }
+    if (receivedNumber == 8) {
+        basic.showLeds(`
+            . . . . .
+            # # # # .
+            # . . . #
+            # # # # .
+            . . . . .
+            `)
+        radio.sendString("" + (Rover.BatteryLevel()))
+        basic.showString("" + (Rover.BatteryLevel()))
+        basic.showLeds(`
+            . . . . .
+            # # # # .
+            # . . . #
+            # # # # .
+            . . . . .
+            `)
+    }
 })
 basic.showString("Hello!")
+basic.showString("" + (Rover.BatteryLevel()))
 Rover.setALLRGB(Rover.colors(RoverColors.White))
 radio.setGroup(123)
 Rover.setALLRGB(Rover.colors(RoverColors.Violet))
