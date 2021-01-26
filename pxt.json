@@ -5,7 +5,8 @@
         "core": "*",
         "radio": "*",
         "Rover": "github:freenove/makecode-extension-rover#c7a23421f88a2b51a307dac8e4fbe422a5ab80d9",
-        "servo": "*"
+        "servo": "*",
+        "microphone": "*"
     },
     "files": [
         "main.blocks",
