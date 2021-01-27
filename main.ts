@@ -308,11 +308,11 @@ radio.onReceivedNumber(function (receivedNumber) {
             `)
     }
 })
+radio.setGroup(123)
 radio.sendNumber(11)
 basic.showString("Hello!")
 basic.showString("" + (Rover.BatteryLevel()))
 Rover.setALLRGB(Rover.colors(RoverColors.White))
-radio.setGroup(123)
 Rover.setALLRGB(Rover.colors(RoverColors.Violet))
 Rover.setALLRGB(Rover.colors(RoverColors.Black))
 basic.showArrow(ArrowNames.North)
