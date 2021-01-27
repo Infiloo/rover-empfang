@@ -318,7 +318,75 @@ basic.showArrow(ArrowNames.North)
 basic.showIcon(IconNames.Happy)
 Rover.setALLRGB(Rover.colors(RoverColors.Purple))
 basic.forever(function () {
-	
+    if (Rover.Ultrasonic() <= 5) {
+        Rover.MotorStopAll(MotorActions.Stop)
+        radio.sendNumber(10)
+        Rover.setALLRGB(Rover.colors(RoverColors.Red))
+        music.playMelody("C5 - C5 - C5 - C5 - ", 120)
+        basic.showLeds(`
+            . # # # .
+            # # . # #
+            # . # . #
+            # # . # #
+            . # # # .
+            `)
+        basic.showLeds(`
+            . # # # .
+            # . . # #
+            # . # . #
+            # # . . #
+            . # # # .
+            `)
+        basic.showLeds(`
+            . # # # .
+            # . . . #
+            # . . . #
+            # . . . #
+            . # # # .
+            `)
+        basic.showLeds(`
+            . # # # .
+            # . . . #
+            # . # . #
+            # . . . #
+            . # # # .
+            `)
+        basic.showLeds(`
+            . # # # .
+            # # # # #
+            # # # # #
+            # # # # #
+            . # # # .
+            `)
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # . # #
+            # # # # #
+            # # # # #
+            `)
+        basic.showLeds(`
+            # # # # #
+            # . . . #
+            # . . . #
+            # . . . #
+            # # # # #
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            . . # . .
+            . . . . .
+            . . # . .
+            `)
+    }
 })
 basic.forever(function () {
     Rover.setBrightness(0)
