@@ -465,6 +465,7 @@ basic.forever(function () {
             # . . . #
             . # # # .
             `)
+        Rover.Move(255)
         basic.showLeds(`
             . # # # .
             # # # # #
@@ -500,6 +501,5 @@ basic.forever(function () {
             . . . . .
             . . # . .
             `)
-        Rover.Move(255)
     }
 })
