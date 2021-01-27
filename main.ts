@@ -307,6 +307,99 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . . . .
             `)
     }
+    if (receivedNumber == 12) {
+        basic.showLeds(`
+            . # # # .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . # # # .
+            . # # # .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . # # # .
+            . # # # .
+            . # # # .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            . # # # .
+            . # # # .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . # . .
+            . # # # .
+            . # # # .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . # # # .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . # . .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . # . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . # # # .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+        basic.showLeds(`
+            . . . . .
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    }
 })
 radio.setGroup(123)
 radio.sendNumber(11)
