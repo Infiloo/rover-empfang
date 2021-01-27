@@ -437,6 +437,7 @@ basic.forever(function () {
         radio.sendNumber(10)
         Rover.setALLRGB(Rover.colors(RoverColors.Red))
         music.playMelody("C5 - C5 - C5 - C5 - ", 120)
+        Rover.Move(255)
         basic.showLeds(`
             . # # # .
             # # . # #
@@ -465,7 +466,6 @@ basic.forever(function () {
             # . . . #
             . # # # .
             `)
-        Rover.Move(255)
         basic.showLeds(`
             . # # # .
             # # # # #
