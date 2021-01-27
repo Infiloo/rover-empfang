@@ -308,6 +308,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             `)
     }
 })
+radio.sendNumber(11)
 basic.showString("Hello!")
 basic.showString("" + (Rover.BatteryLevel()))
 Rover.setALLRGB(Rover.colors(RoverColors.White))
