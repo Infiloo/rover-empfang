@@ -400,6 +400,38 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . . . .
             `)
     }
+    if (receivedNumber == 13) {
+        Rover.MotorStopAll(MotorActions.Stop)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . # . .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . # # # .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . # . .
+            . # # # .
+            . # # # .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            . # # # .
+            . # # # .
+            . . . . .
+            `)
+        basic.showString("Stop")
+    }
 })
 radio.setGroup(123)
 radio.sendNumber(11)
