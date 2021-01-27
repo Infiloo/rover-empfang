@@ -318,6 +318,9 @@ basic.showArrow(ArrowNames.North)
 basic.showIcon(IconNames.Happy)
 Rover.setALLRGB(Rover.colors(RoverColors.Purple))
 basic.forever(function () {
+	
+})
+basic.forever(function () {
     Rover.setBrightness(0)
     basic.pause(100)
     Rover.setBrightness(99)
